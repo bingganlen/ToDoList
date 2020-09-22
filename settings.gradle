@@ -1,0 +1,3 @@
+include ':app',  ':qmui',':lintrule'
+rootProject.name = "ToDoList"
+project(':qmui').projectDir = new File('QMUI_Android/qmui')
