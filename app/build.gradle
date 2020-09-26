@@ -25,13 +25,7 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
-
-//    implementation 'com.qmuiteam:qmui:2.0.0-alpha02'
-    //MPAndroidChart库有一个内存泄漏问题，需要修改，不能直接导入，
-    implementation project(':qmui')
-
-
-    implementation 'com.android.support:design:28.0.0'
+//    implementation 'com.android.support:design:28.0.0'  换成下面的
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.annotation:annotation:1.1.0'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'

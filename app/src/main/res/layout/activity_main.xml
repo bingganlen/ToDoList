@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 
 
     <!--<com.google.android.material.appbar.AppBarLayout
@@ -26,11 +26,15 @@
 </com.google.android.material.appbar.AppBarLayout>-->
     <include layout="@layout/layout_appbar" />
 
-    <com.qmuiteam.qmui.widget.QMUITopBar
-        android:id="@+id/topbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/qmui_topbar_height" />
+<!--    <com.qmuiteam.qmui.widget.QMUITopBar-->
+<!--        android:id="@+id/topbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/qmui_topbar_height" />-->
 
+    <ListView
+        android:id="@+id/lv_groups"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 
 

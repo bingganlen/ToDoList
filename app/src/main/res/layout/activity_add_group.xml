@@ -5,8 +5,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".AddGroupActivity">
+    android:background="@color/colorLight"
+    tools:context=".activity.AddGroupActivity">
+
     <include layout="@layout/layout_appbar" />
 
+    <EditText
+        android:id="@+id/et_group_name"
+        style="@style/Bar.White"
+        android:paddingStart="@dimen/horizontal_padding"
+        android:hint="分组名称"
+        />
+
+<!--centerVertical垂直居中
+android:foreground="?attr/selectableItemBackground"  点击时出现涟漪的效果
+-->
+    <RelativeLayout
+        android:id="@+id/rl_icon_choose"
+        style="@style/Bar.White.Selectable"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="icon" />
+
+        <ImageView
+            android:id="@+id/iv_go"
+            style="@style/Icon"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/qmui_icon_chevron" />
+        
+        <ImageView
+            android:id="@+id/iv_chosen_icon"
+            style="@style/Icon"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_go"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            />
+
+
+    </RelativeLayout>
 
 </LinearLayout>
