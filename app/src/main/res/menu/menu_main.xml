@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--a b 出现在外面  C在里面    b是如果有空间就出现在外面-->
+    <item android:title="A"
+    android:id="@+id/item_a"
+    app:showAsAction="always"
+    android:icon="@mipmap/ic_launcher"/>
+    <item android:title="B"
+    android:id="@+id/item_b"
+    app:showAsAction="ifRoom"
+    android:icon="@mipmap/ic_launcher"/>
+    <item android:title="C"
+    android:id="@+id/item_c"
+    app:showAsAction="never"
+    android:icon="@mipmap/ic_launcher"/>
+</menu>

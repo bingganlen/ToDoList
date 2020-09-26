@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.IconChooseActivity"
+    android:orientation="vertical">
+<!--    android:orientation="vertical"布局内控件排列方式为 垂直排列  如果水平排列就看不到   -->
+
+    <include layout="@layout/layout_appbar" />
+
+
+    <ListView
+        android:id="@+id/lv_icons"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"/>
+
+
+</LinearLayout>
